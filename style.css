@@ -1,0 +1,73 @@
+/*Basic Style */
+body {
+  background: #ece5e5;
+  color: #333;
+  font-family: Lato, sans-serif;
+}
+.container {
+  display: block;
+  width: 600px;
+  margin: 100px auto 0;
+  border: 3px solid #333;
+}
+
+.container * {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+h3 {
+  border-bottom: 2px solid rgb(210, 210, 210);
+}
+
+li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+ input {
+   width: 250px;
+   display: inline;
+   float: right;
+   text-align: right;
+ }
+
+
+#staffEntry {
+  text-align: center;
+}
+
+button {
+  text-align: center;
+  font-size: 14px;
+  height: 105px;
+  width: 105px;
+  margin: 0 auto;
+}
+
+.buttonActive {
+  display: none;
+}
+
+#calculate {
+  display: block;
+  width: 500px;
+  height: auto;
+  margin: 0 auto;
+  background: rgb(14, 129, 33);
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: extra-expanded;
+}
+
+.resultsList {
+  font-size: 18px;
+}

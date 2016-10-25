@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<!--Author: Keegan Gladstone-->
+<html>
+  <head>
+    <title>Assaggios Tipout Calculator</title>
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Assaggios Tipout Calculator</h1>
+      <p>A tipout calculator for the servers of Assaggios italian restaurant</p>
+      <div id="staffEntry">
+        <h3>Click all that apply</h3>
+        <ul id="serverList">
+          <!--Emmet quick note: button#server$@+*5-->
+          <button class="server" onclick="serverClicked">Server #1</button>
+          <button class="server" id="server2">Server #2</button>
+          <button class="server" id="server3">Server #3</button>
+          <button class="server" id="server4">Server #4</button>
+          <button class="server" id="server5">Server #5</button>
+        </ul>
+        <ul id="middleList">
+          <button class="busser 1">Open Busser</button>
+          <button class="busser 2">Second Busser</button>
+          <button class="busser 4">Closing Busser</button>
+          <button class="backwaiter">Back waiter</button>
+        </ul>
+        <ul id="bottomList">
+          <button class="host">Host #1</button>
+          <button class="host">Host #2</button>
+          <button class="host">Cashier</button>
+          <button id="bar">Bar</button>
+        </ul>
+      </div>
+      <div id="tipsEntry">
+        <h3 id="weight">Staff Weight is</h3>
+        <ul id="enterTipsList">
+          <li><label>Enter Cash Tips:</label><label class="tipInput"></label><input type="number" id="cashTips" placeholder="0"/></li>
+          <li><label>Enter Credit Tips:</label><label class="tipInput"></label><input type="number" id="creditTips"  placeholder="0"/></li>
+          <li><label>Enter totalSales Tips:</label><label class="tipInput"></label><input type="number" id="totalSales" placeholder="0"/></li>
+          <li><label>Enter bar Tips:</label><label class="tipInput"></label><input type="number" id="barTips" placeholder="0"/></li>
+          <li><label>Enter takeout Tips:</label><label class="tipInput"></label><input type="number" id="takeoutTips" placeholder="0"/></li>
+        </ul>
+      </div>
+      <button id="calculate">
+        CALCULATE
+      </button>
+      <div id="results">
+        <ul class="resultsList">
+          <li><label id="serverResults"></label></li>
+          <li><label id="backwaiterResults"></label></li>
+          <li><label id="busserResults"></label></li>
+          <li><label id="hostResults"></label></li>
+          <li><label id="barResults"></label></li>
+        </ul>
+      </div>
+    </div>
+  <script src="app.js"></script>
+  <script src="calculate.js"></script>
+  </body>
+</html>
